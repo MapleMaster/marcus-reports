@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcus 美股盘前报告 - 2026-03-04 16:32</title>
+    <title>Marcus 美股盘前报告 - 2026-03-04 21:01</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { 
@@ -100,13 +100,35 @@
             border-left: 4px solid #0066cc;
             border-radius: 8px;
         }
+
+        /* 移动端响应式 */
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .header { padding: 20px !important; }
+            .header h1 { font-size: 1.8em !important; }
+            .header .subtitle { font-size: 1em !important; }
+            .stance { padding: 15px 20px !important; }
+            .stocks { padding: 20px !important; }
+            .stock-card { padding: 15px !important; }
+            .stock-header { flex-direction: column !important; align-items: flex-start !important; gap: 10px; }
+            .stock-title { font-size: 1.2em !important; }
+            .stock-price { font-size: 1.4em !important; }
+            .indicators { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; }
+            .indicator { padding: 10px !important; }
+            .signal-box { padding: 10px !important; font-size: 0.9em !important; }
+            .footer { padding: 20px !important; }
+        }
+        @media (max-width: 480px) {
+            .header h1 { font-size: 1.5em !important; }
+            .indicators { grid-template-columns: 1fr !important; }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1>📊 Marcus 美股盘前报告</h1>
-            <p class="subtitle">日期：2026-03-04 16:32 | 市场：美股盘前</p>
+            <p class="subtitle">日期：2026-03-04 21:01 | 市场：美股盘前</p>
         </div>
         
         <div class="stance">
