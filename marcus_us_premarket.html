@@ -4,131 +4,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcus 美股盘前报告 - 2026-03-04 21:01</title>
+    <title>Marcus 美股盘前报告 - 2026-03-05 21:02</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
+        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
+        body {{ 
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             padding: 20px;
             color: #333;
-        }
-        .container {
+        }}
+        .container {{
             max-width: 1200px;
             margin: 0 auto;
             background: white;
             border-radius: 16px;
             box-shadow: 0 20px 60px rgba(0,0,0,0.3);
             overflow: hidden;
-        }
-        .header {
+        }}
+        .header {{
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 40px;
             text-align: center;
-        }
-        .header h1 { font-size: 2.5em; margin-bottom: 10px; }
-        .header .subtitle { font-size: 1.2em; opacity: 0.9; }
-        .stance {
+        }}
+        .header h1 {{ font-size: 2.5em; margin-bottom: 10px; }}
+        .header .subtitle {{ font-size: 1.2em; opacity: 0.9; }}
+        .stance {{
             padding: 30px 40px;
             background: #f8f9fa;
             border-left: 5px solid #28a745;
-        }
-        .stance h2 { color: #28a745; margin-bottom: 10px; }
-        .stance p { font-size: 1.1em; line-height: 1.6; }
-        .stocks {
+        }}
+        .stance h2 {{ color: #28a745; margin-bottom: 10px; }}
+        .stance p {{ font-size: 1.1em; line-height: 1.6; }}
+        .stocks {{
             padding: 40px;
-        }
-        .stock-card {
+        }}
+        .stock-card {{
             background: #fff;
             border: 2px solid #e9ecef;
             border-radius: 12px;
             padding: 25px;
             margin-bottom: 25px;
             transition: all 0.3s;
-        }
-        .stock-card:hover {
+        }}
+        .stock-card:hover {{
             box-shadow: 0 8px 25px rgba(0,0,0,0.1);
             transform: translateY(-5px);
-        }
-        .stock-header {
+        }}
+        .stock-header {{
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 15px;
             border-bottom: 2px solid #f1f3f5;
             padding-bottom: 15px;
-        }
-        .stock-title { font-size: 1.5em; color: #495057; font-weight: bold; }
-        .stock-price { font-size: 1.8em; font-weight: bold; }
-        .price-up { color: #28a745; }
-        .price-down { color: #dc3545; }
-        .indicators {
+        }}
+        .stock-title {{ font-size: 1.5em; color: #495057; font-weight: bold; }}
+        .stock-price {{ font-size: 1.8em; font-weight: bold; }}
+        .price-up {{ color: #28a745; }}
+        .price-down {{ color: #dc3545; }}
+        .indicators {{
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 15px;
             margin: 20px 0;
-        }
-        .indicator {
+        }}
+        .indicator {{
             background: #f8f9fa;
             padding: 15px;
             border-radius: 8px;
-        }
-        .indicator-label { font-size: 0.9em; color: #6c757d; margin-bottom: 5px; }
-        .indicator-value { font-size: 1.2em; font-weight: bold; color: #495057; }
-        .signal-box {
+        }}
+        .indicator-label {{ font-size: 0.9em; color: #6c757d; margin-bottom: 5px; }}
+        .indicator-value {{ font-size: 1.2em; font-weight: bold; color: #495057; }}
+        .signal-box {{
             background: #fff3cd;
             border-left: 4px solid #ffc107;
             padding: 15px;
             border-radius: 8px;
             margin-top: 15px;
-        }
-        .signal-box.buy { background: #d4edda; border-color: #28a745; }
-        .signal-box.sell { background: #f8d7da; border-color: #dc3545; }
-        .footer {
+        }}
+        .signal-box.buy {{ background: #d4edda; border-color: #28a745; }}
+        .signal-box.sell {{ background: #f8d7da; border-color: #dc3545; }}
+        .footer {{
             padding: 30px 40px;
             background: #343a40;
             color: white;
             text-align: center;
-        }
-        .footer p { font-size: 1.1em; line-height: 1.8; }
-        .marcus-quote {
+        }}
+        .footer p {{ font-size: 1.1em; line-height: 1.8; }}
+        .marcus-quote {{
             font-style: italic;
             margin: 20px 0;
             padding: 20px;
             background: #e7f3ff;
             border-left: 4px solid #0066cc;
             border-radius: 8px;
-        }
+        }}
 
         /* 移动端响应式 */
-        @media (max-width: 768px) {
-            body { padding: 10px; }
-            .header { padding: 20px !important; }
-            .header h1 { font-size: 1.8em !important; }
-            .header .subtitle { font-size: 1em !important; }
-            .stance { padding: 15px 20px !important; }
-            .stocks { padding: 20px !important; }
-            .stock-card { padding: 15px !important; }
-            .stock-header { flex-direction: column !important; align-items: flex-start !important; gap: 10px; }
-            .stock-title { font-size: 1.2em !important; }
-            .stock-price { font-size: 1.4em !important; }
-            .indicators { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; }
-            .indicator { padding: 10px !important; }
-            .signal-box { padding: 10px !important; font-size: 0.9em !important; }
-            .footer { padding: 20px !important; }
-        }
-        @media (max-width: 480px) {
-            .header h1 { font-size: 1.5em !important; }
-            .indicators { grid-template-columns: 1fr !important; }
-        }
+        @media (max-width: 768px) {{
+            body {{ padding: 10px; }}
+            .header {{ padding: 20px !important; }}
+            .header h1 {{ font-size: 1.8em !important; }}
+            .header .subtitle {{ font-size: 1em !important; }}
+            .stance {{ padding: 15px 20px !important; }}
+            .stocks {{ padding: 20px !important; }}
+            .stock-card {{ padding: 15px !important; }}
+            .stock-header {{ flex-direction: column !important; align-items: flex-start !important; gap: 10px; }}
+            .stock-title {{ font-size: 1.2em !important; }}
+            .stock-price {{ font-size: 1.4em !important; }}
+            .indicators {{ grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; }}
+            .indicator {{ padding: 10px !important; }}
+            .signal-box {{ padding: 10px !important; font-size: 0.9em !important; }}
+            .footer {{ padding: 20px !important; }}
+        }}
+        @media (max-width: 480px) {{
+            .header h1 {{ font-size: 1.5em !important; }}
+            .indicators {{ grid-template-columns: 1fr !important; }}
+        }}
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1>📊 Marcus 美股盘前报告</h1>
-            <p class="subtitle">日期：2026-03-04 21:01 | 市场：美股盘前</p>
+            <p class="subtitle">日期：2026-03-05 21:02 | 市场：美股盘前</p>
         </div>
         
         <div class="stance">
@@ -142,74 +142,10 @@
             <div class="stock-card">
                 <div class="stock-header">
                     <div class="stock-title">NVDA - 英伟达</div>
-                    <div class="stock-price price-down">$180.05 ↓ 1.33%</div>
+                    <div class="stock-price price-up">$183.04 ↑ 1.66%</div>
                 </div>
                 
                 <p style="margin-bottom: 15px; color: #6c757d;"><strong>推荐理由：</strong>AI芯片需求强劲，技术面突破关键阻力</p>
-                
-                <div class="indicators">
-                    <div class="indicator">
-                        <div class="indicator-label">RSI (14日)</div>
-                        <div class="indicator-value">基于日内波动 - 中性</div>
-                    </div>
-                    <div class="indicator">
-                        <div class="indicator-label">MACD</div>
-                        <div class="indicator-value">空头</div>
-                    </div>
-                    <div class="indicator">
-                        <div class="indicator-label">均线趋势</div>
-                        <div class="indicator-value">空头排列</div>
-                    </div>
-                    <div class="indicator">
-                        <div class="indicator-label">波动率</div>
-                        <div class="indicator-value">中</div>
-                    </div>
-                </div>
-                
-                <div class="signal-box ">
-                    <strong>💡 交易信号：</strong> 观望
-                </div>
-            </div>
-
-            <div class="stock-card">
-                <div class="stock-header">
-                    <div class="stock-title">TSLA - 特斯拉</div>
-                    <div class="stock-price price-down">$392.43 ↓ 2.70%</div>
-                </div>
-                
-                <p style="margin-bottom: 15px; color: #6c757d;"><strong>推荐理由：</strong>交付数据向好，短期回调形成支撑</p>
-                
-                <div class="indicators">
-                    <div class="indicator">
-                        <div class="indicator-label">RSI (14日)</div>
-                        <div class="indicator-value">基于日内波动 - 超卖</div>
-                    </div>
-                    <div class="indicator">
-                        <div class="indicator-label">MACD</div>
-                        <div class="indicator-value">空头</div>
-                    </div>
-                    <div class="indicator">
-                        <div class="indicator-label">均线趋势</div>
-                        <div class="indicator-value">空头排列</div>
-                    </div>
-                    <div class="indicator">
-                        <div class="indicator-label">波动率</div>
-                        <div class="indicator-value">中</div>
-                    </div>
-                </div>
-                
-                <div class="signal-box buy">
-                    <strong>💡 交易信号：</strong> 考虑买入
-                </div>
-            </div>
-
-            <div class="stock-card">
-                <div class="stock-header">
-                    <div class="stock-title">MSFT - 微软</div>
-                    <div class="stock-price price-up">$403.93 ↑ 1.35%</div>
-                </div>
-                
-                <p style="margin-bottom: 15px; color: #6c757d;"><strong>推荐理由：</strong>云计算稳健增长，AI产品线持续变现</p>
                 
                 <div class="indicators">
                     <div class="indicator">
@@ -237,8 +173,72 @@
 
             <div class="stock-card">
                 <div class="stock-header">
+                    <div class="stock-title">TSLA - 特斯拉</div>
+                    <div class="stock-price price-up">$405.94 ↑ 3.44%</div>
+                </div>
+                
+                <p style="margin-bottom: 15px; color: #6c757d;"><strong>推荐理由：</strong>交付数据向好，短期回调形成支撑</p>
+                
+                <div class="indicators">
+                    <div class="indicator">
+                        <div class="indicator-label">RSI (14日)</div>
+                        <div class="indicator-value">基于日内波动 - 超买</div>
+                    </div>
+                    <div class="indicator">
+                        <div class="indicator-label">MACD</div>
+                        <div class="indicator-value">多头</div>
+                    </div>
+                    <div class="indicator">
+                        <div class="indicator-label">均线趋势</div>
+                        <div class="indicator-value">多头排列</div>
+                    </div>
+                    <div class="indicator">
+                        <div class="indicator-label">波动率</div>
+                        <div class="indicator-value">高</div>
+                    </div>
+                </div>
+                
+                <div class="signal-box sell">
+                    <strong>💡 交易信号：</strong> 考虑卖出
+                </div>
+            </div>
+
+            <div class="stock-card">
+                <div class="stock-header">
+                    <div class="stock-title">MSFT - 微软</div>
+                    <div class="stock-price price-up">$405.20 ↑ 0.31%</div>
+                </div>
+                
+                <p style="margin-bottom: 15px; color: #6c757d;"><strong>推荐理由：</strong>云计算稳健增长，AI产品线持续变现</p>
+                
+                <div class="indicators">
+                    <div class="indicator">
+                        <div class="indicator-label">RSI (14日)</div>
+                        <div class="indicator-value">基于日内波动 - 中性</div>
+                    </div>
+                    <div class="indicator">
+                        <div class="indicator-label">MACD</div>
+                        <div class="indicator-value">多头</div>
+                    </div>
+                    <div class="indicator">
+                        <div class="indicator-label">均线趋势</div>
+                        <div class="indicator-value">震荡</div>
+                    </div>
+                    <div class="indicator">
+                        <div class="indicator-label">波动率</div>
+                        <div class="indicator-value">低</div>
+                    </div>
+                </div>
+                
+                <div class="signal-box ">
+                    <strong>💡 交易信号：</strong> 观望
+                </div>
+            </div>
+
+            <div class="stock-card">
+                <div class="stock-header">
                     <div class="stock-title">AAPL - 苹果</div>
-                    <div class="stock-price price-down">$263.75 ↓ 0.37%</div>
+                    <div class="stock-price price-down">$262.52 ↓ 0.47%</div>
                 </div>
                 
                 <p style="margin-bottom: 15px; color: #6c757d;"><strong>推荐理由：</strong>新产品周期临近，机构资金持续流入</p>
@@ -270,7 +270,7 @@
             <div class="stock-card">
                 <div class="stock-header">
                     <div class="stock-title">META - Meta</div>
-                    <div class="stock-price price-up">$655.08 ↑ 0.23%</div>
+                    <div class="stock-price price-up">$667.73 ↑ 1.93%</div>
                 </div>
                 
                 <p style="margin-bottom: 15px; color: #6c757d;"><strong>推荐理由：</strong>广告收入复苏，VR/AR业务超预期</p>
@@ -286,11 +286,11 @@
                     </div>
                     <div class="indicator">
                         <div class="indicator-label">均线趋势</div>
-                        <div class="indicator-value">震荡</div>
+                        <div class="indicator-value">多头排列</div>
                     </div>
                     <div class="indicator">
                         <div class="indicator-label">波动率</div>
-                        <div class="indicator-value">低</div>
+                        <div class="indicator-value">中</div>
                     </div>
                 </div>
                 
