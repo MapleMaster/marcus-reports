@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcus A股盘前报告 - 2026-03-04 16:32</title>
+    <title>Marcus A股盘前报告 - 2026-03-05 08:47</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
+        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
+        body {{ 
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;
             background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             padding: 20px;
             color: #333;
-        }
+        }}
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -27,42 +27,42 @@
             padding: 40px;
             text-align: center;
         }
-        .header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .header h1 {{ font-size: 2.5em; margin-bottom: 10px; }}
         .header .subtitle { font-size: 1.2em; opacity: 0.9; }
         .stance {
             padding: 30px 40px;
             background: #f8f9fa;
             border-left: 5px solid #28a745;
         }
-        .stance h2 { color: #28a745; margin-bottom: 10px; }
-        .stance p { font-size: 1.1em; line-height: 1.6; }
+        .stance h2 {{ color: #28a745; margin-bottom: 10px; }}
+        .stance p {{ font-size: 1.1em; line-height: 1.6; }}
         .stocks {
             padding: 40px;
         }
-        .stock-card {
+        .stock-card {{
             background: #fff;
             border: 2px solid #e9ecef;
             border-radius: 12px;
             padding: 25px;
             margin-bottom: 25px;
             transition: all 0.3s;
-        }
-        .stock-card:hover {
+        }}
+        .stock-card:hover {{
             box-shadow: 0 8px 25px rgba(0,0,0,0.1);
             transform: translateY(-5px);
-        }
-        .stock-header {
+        }}
+        .stock-header {{
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 15px;
             border-bottom: 2px solid #f1f3f5;
             padding-bottom: 15px;
-        }
-        .stock-title { font-size: 1.5em; color: #495057; font-weight: bold; }
-        .stock-price { font-size: 1.8em; font-weight: bold; }
-        .price-up { color: #dc3545; }
-        .price-down { color: #28a745; }
+        }}
+        .stock-title {{ font-size: 1.5em; color: #495057; font-weight: bold; }}
+        .stock-price {{ font-size: 1.8em; font-weight: bold; }}
+        .price-up {{ color: #dc3545; }}
+        .price-down {{ color: #28a745; }}
         .indicators {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -74,15 +74,15 @@
             padding: 15px;
             border-radius: 8px;
         }
-        .indicator-label { font-size: 0.9em; color: #6c757d; margin-bottom: 5px; }
-        .indicator-value { font-size: 1.2em; font-weight: bold; color: #495057; }
-        .signal-box {
+        .indicator-label {{ font-size: 0.9em; color: #6c757d; margin-bottom: 5px; }}
+        .indicator-value {{ font-size: 1.2em; font-weight: bold; color: #495057; }}
+        .signal-box {{
             background: #fff3cd;
             border-left: 4px solid #ffc107;
             padding: 15px;
             border-radius: 8px;
             margin-top: 15px;
-        }
+        }}
         .signal-box.buy { background: #f8d7da; border-color: #dc3545; }
         .signal-box.sell { background: #d4edda; border-color: #28a745; }
         .footer {
@@ -91,8 +91,8 @@
             color: white;
             text-align: center;
         }
-        .footer p { font-size: 1.1em; line-height: 1.8; }
-        .marcus-quote {
+        .footer p {{ font-size: 1.1em; line-height: 1.8; }}
+        .marcus-quote {{
             font-style: italic;
             margin: 20px 0;
             padding: 20px;
@@ -100,13 +100,35 @@
             border-left: 4px solid #dc3545;
             border-radius: 8px;
         }
+
+        /* 移动端响应式 */
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .header { padding: 20px !important; }
+            .header h1 { font-size: 1.8em !important; }
+            .header .subtitle { font-size: 1em !important; }
+            .stance { padding: 15px 20px !important; }
+            .stocks { padding: 20px !important; }
+            .stock-card { padding: 15px !important; }
+            .stock-header { flex-direction: column !important; align-items: flex-start !important; gap: 10px; }
+            .stock-title { font-size: 1.2em !important; }
+            .stock-price { font-size: 1.4em !important; }
+            .indicators { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; }
+            .indicator { padding: 10px !important; }
+            .signal-box { padding: 10px !important; font-size: 0.9em !important; }
+            .footer { padding: 20px !important; }
+        }
+        @media (max-width: 480px) {
+            .header h1 { font-size: 1.5em !important; }
+            .indicators { grid-template-columns: 1fr !important; }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1>📊 Marcus A股盘前报告</h1>
-            <p class="subtitle">日期：2026-03-04 16:32 | 市场：A股盘前</p>
+            <p class="subtitle">日期：2026-03-05 08:47 | 市场：A股盘前</p>
         </div>
         
         <div class="stance">
